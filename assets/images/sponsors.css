@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+#logo {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 1rem;
+  line-height: 140%;
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
+}
+
+#logo span {
+  color: #ff4a4a;
+}
+
+.sponsors {
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+}
+
+#title {
+  font-family: "MrRobot";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3.5rem;
+  line-height: 130%;
+  text-align: center;
+  color: #fc0101;
+
+  margin-bottom: 2rem;
+  margin-top: 25rem;
+}
+
+.sponsors p {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21.4235px;
+  line-height: 160%;
+  text-align: justify;
+  letter-spacing: 0.1em;
+  /* width: 33.33vw; */
+  margin-bottom: 3rem;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+}
+
+.box {
+  /* height: 50vh;
+  width: 50vw; */
+  box-sizing: border-box;
+  /* background: rgba(255, 255, 255, 0.05); */
+  backdrop-filter: blur(32px);
+  border-radius: 33.7748px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 60%;
+  max-height: 60%;
+}
+
+.images {
+  border: 4px solid #a72121;
+  max-width: 90%;
+  max-height: 90%;
+  width: auto;
+  height: auto;
+}
+
+.plat-spon {
+  align-items: center;
+  /* padding-top: 2%; */
+}
+
+@media (max-width: 1920px) {
+  .title {
+    /* if changing this value, it causes trouble in faq section */
+    margin-top: 0vh;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .box {
+    margin-bottom: 2rem;
+    width: 50vw;
+  }
+
+  .sponsors p {
+    width: auto;
+    height: 100vh;
+    /* margin-top: 0.5em; */
+    padding-top: 2em;
+    justify-content: center;
+  }
+  .plat-spon {
+    display: flex;
+    align-items: center;
+    /* padding: 2%; */
+  }
+}
+
+@media (max-width: 1440px) {
+  .title {
+    margin-top: 45vh;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .box {
+    margin-bottom: 2rem;
+    width: 50vw;
+  }
+
+  .sponsors p {
+    width: auto;
+    height: auto;
+    padding: 2rem;
+    justify-content: center;
+  }
+  .plat-spon {
+    align-items: center;
+    /* padding: 2%; */
+  }
+}
+
+@media (max-width: 768px) {
+  #title {
+    font-size: 3.2rem;
+    margin-top: 7rem;
+  }
+
+  .box {
+    width: 80vw;
+    height: 30vh;
+  }
+
+  .center {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .sponsors p {
+    width: 359px;
+    height: auto;
+    justify-content: center;
+  }
+
+  #logo {
+    position: absolute;
+    left: 100px;
+    top: 70px;
+  }
+  .plat-spon {
+    align-items: center;
+    /* padding: 2%; */
+  }
+}
